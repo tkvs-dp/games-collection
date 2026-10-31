@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>存檔點</title>
+  <meta name="description" content="遊戲介紹、玩法、推薦原因與個人遊玩心得，還有可以直接玩的迷你挑戰。">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='19' fill='%23141414'/%3E%3Crect x='18' y='18' width='28' height='28' rx='4' fill='%23fff'/%3E%3Crect x='26' y='26' width='12' height='12' fill='%23141414'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Noto+Sans+TC:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <nav class="nav-pill" aria-label="主要">
+      <a class="brand" href="index.html" aria-label="回到存檔點首頁">
+        <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#141414"/><rect x="18" y="18" width="28" height="28" rx="4" fill="#fff"/><rect x="26" y="26" width="12" height="12" fill="#141414"/></svg></span>
+        存檔點
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html#saves">所有存檔</a>
+        <a class="btn btn-primary" href="#challenge">玩挑戰</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="game"></main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-mark">存檔點</div>
+      <p>遊戲時數會一直增加，心得也會一直改。這是一個玩家自己的收藏，不代表任何遊戲公司。</p>
+      <nav class="footer-links" aria-label="頁尾" id="footer-links"></nav>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/scenes.js" defer></script>
+  <script src="js/arcade.js" defer></script>
+  <script src="js/minigames/mine.js" defer></script>
+  <script src="js/minigames/sky.js" defer></script>
+  <script src="js/minigames/cipher.js" defer></script>
+  <script src="js/minigames/lasthit.js" defer></script>
+  <script src="js/minigames/extract.js" defer></script>
+  <script src="js/game-page.js" defer></script>
+</body>
+</html>

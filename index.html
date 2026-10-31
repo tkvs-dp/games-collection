@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>存檔點</title>
+  <meta name="description" content="我真正玩很久的五款遊戲：Minecraft、光遇、第五人格、傳說對決、三角洲行動。介紹、玩法、推薦原因、遊玩心得，還有可以直接玩的迷你挑戰。">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='19' fill='%23141414'/%3E%3Crect x='18' y='18' width='28' height='28' rx='4' fill='%23fff'/%3E%3Crect x='26' y='26' width='12' height='12' fill='%23141414'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Noto+Sans+TC:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <nav class="nav-pill" aria-label="主要">
+      <a class="brand" href="index.html" aria-label="存檔點首頁">
+        <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#141414"/><rect x="18" y="18" width="28" height="28" rx="4" fill="#fff"/><rect x="26" y="26" width="12" height="12" fill="#141414"/></svg></span>
+        存檔點
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="#saves">我的存檔</a>
+        <a class="nav-link" href="#arcade">街機</a>
+        <a class="btn btn-primary" href="#arcade">玩一局</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 class="display" id="hero-title">我玩最久的<br>五個世界。</h1>
+        <p class="lead">這裡不是遊戲資料庫。每一款都陪我度過好幾百個小時，有挖到鑽石的半夜，也有最後三秒逃出莊園的尖叫。點一座島，進去看看。</p>
+      </div>
+      <div class="archipelago" id="archipelago">
+        <div class="island-labels"></div>
+      </div>
+      <p class="hero-hint caption">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12h10M7 12l3-3M7 12l3 3M17 12l-3-3M17 12l-3 3"/></svg>
+        左右滑動轉動群島，點島嶼進入
+      </p>
+    </section>
+
+    <section class="wrap section" id="saves" aria-labelledby="saves-title">
+      <div class="section-head">
+        <h2 class="h2" id="saves-title">我的存檔。</h2>
+        <p class="lead muted">依遊玩時數排序。每一格都是一段還沒結束的冒險。</p>
+      </div>
+      <div class="shelf" id="shelf"></div>
+    </section>
+
+    <section class="wrap section" id="arcade" aria-labelledby="arcade-title">
+      <div class="section-head">
+        <h2 class="h2" id="arcade-title">街機。</h2>
+        <p class="lead muted">每個世界都做了一個一分鐘內玩完的小挑戰，手機單手就能玩。最佳紀錄會存在這台裝置上。</p>
+      </div>
+      <div class="arcade" id="arcade-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-mark">存檔點</div>
+      <p>遊戲時數會一直增加，心得也會一直改。這是一個玩家自己的收藏，不代表任何遊戲公司。</p>
+      <nav class="footer-links" aria-label="頁尾" id="footer-links"></nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/scenes.js" defer></script>
+  <script src="js/hero3d.js" defer></script>
+  <script src="js/home.js" defer></script>
+</body>
+</html>
